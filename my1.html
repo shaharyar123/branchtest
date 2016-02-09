@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html>
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
     <script src="my1.js"></script>
+
 </head>
 <body>
 
 
 <div id="list">
-    <input type='text' id='textinput' placeholder="First Nmae" />
-    <input type='text' id='textinput2' placeholder="Second Nmae" />
-    <input type='text' id='textinput3' placeholder="R.no"/>
+    <input type='text' id='name' placeholder="Nmae" />
+    <input type='text' id='f_name' placeholder="Father Nmae" />
+    <input type='text' id='age' placeholder="Age"/>
 
-    <input type='button' onclick='taskadd()' value='Add to list' />
-    <input type='button' onclick="deleteCheckBox()" value='Delete' />
+    <input type='button' onclick='taskadd()' value='Add to list'  id="addbutton"/>
+    <input type='button' onclick="deleteCheckBox()" value='Delete' id="deletebutton" />
+    <input type='button' onclick="update()" value='update' style="display: none" id="updatebutton" />
+    <input type='button' onclick='allclear()' value='Clear all' id="clear"/>
+
     <hr> <ol id="place"></ol>
 </div>
 
