@@ -1,14 +1,14 @@
 
 function taskadd(){
     var field1 = document.getElementById('name');
-    var firstname=field1.value;
+    var firstname=" "+field1.value+ "  ";
 
 
     var field2 = document.getElementById('f_name');
-    var fathername=field2.value;
+    var fathername=field2.value+ "  ";
 
     var field3 = document.getElementById('age');
-    var age=field3.value;
+    var age=field3.value+ "  ";
 
 
 

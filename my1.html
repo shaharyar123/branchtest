@@ -3,27 +3,65 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <script src="my1.js"></script>
+    <link href="style-sheet.css" rel="stylesheet" type="text/css">
+    <!--<link href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 </head>
 <body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="container">
+            <div class="row app">
+                <div id="list">
+
+                    <div class="form-group">
+                        <label>NAME</label>
+                        <input type="text" class="form-control" id="name" placeholder="your name here" >
+                    </div>
+
+                    <div class="form-group">
+                        <label>Father's NAME</label>
+                        <input type="text" class="form-control" id="f_name" placeholder="your father's name here" >
+                    </div>
+
+                    <div class="form-group">
+                        <label>Age</label>
+                        <input type="text" class="form-control" id="age" placeholder="Your age here" >
+                    </div>
+                    <!--<div class="col-md-4 col-sm-12">
+                    <input class="input_place" type='text' id='name' placeholder="Nmae" >
+                        </div>-->
+                        <!--<div class="col-md-4 col-sm-12">
+                    <input class="input_place" type='text' id='f_name' placeholder="Father Nmae" >
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                            <input class="input_place" type='text' id='age' placeholder="Age">
+                    </div>-->
 
 
-<div id="list">
-    <input type='text' id='name' placeholder="Nmae" />
-    <input type='text' id='f_name' placeholder="Father Nmae" />
-    <input type='text' id='age' placeholder="Age"/>
+<div class="buttons">
 
-    <input type='button' onclick='taskadd()' value='Add to list'  id="addbutton"/>
-    <input type='button' onclick="deleteCheckBox()" value='Delete' id="deletebutton" />
-    <input type='button' onclick="update()" value='update' style="display: none" id="updatebutton" />
-    <input type='button' onclick='allclear()' value='Clear all' id="clear"/>
+                    <input type='button' onclick='taskadd()' value='Add to list'  id="addbutton" class="main_buttons">
 
-    <hr> <ol id="place"></ol>
+
+                    <input type='button' onclick="deleteCheckBox()" value='Delete' id="deletebutton" class="main_buttons" >
+                    <input type='button' onclick="update()" value='update' style="display: none" id="updatebutton"  class="main_buttons">
+
+
+                    <input type='button' onclick='allclear()' value='Clear all' id="clear"class="main_buttons">
+
+</div>
+                    <hr> <ol id="place"></ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 
-
+<script src="my1.js"></script>
 
 </body>
 </html>
